@@ -1,0 +1,214 @@
+html {
+  background-image:url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+
+.title p {
+  font-size: 0.938em;
+  color: #898989;
+  font-style: italic;
+  line-height: 19px;
+  margin: 0 0 20px 0;
+}
+.logoholder{
+  float: left;
+  height: 100px;
+  min-width: none;
+  display: circle;
+  margin-left: auto;
+}
+
+.nav-bar ul{
+  list-style-type: none;
+  margin-left: 60%;
+  padding: 0;
+  overflow: hidden;
+  
+
+}
+.nav-bar li{
+      float: left;
+  
+}
+.nav-bar li a {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header .sep{
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: rgb(9, 60, 102);
+  margin: 30px 0 0 0;
+}
+
+.title {
+  margin-top: 80px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 0 38px 0;
+}
+
+.img-holder img {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+margin-right: auto;
+
+}
+
+.img-holder1 img {
+    margin-top: 5%;
+  width: 45%;
+  display: block;
+  margin-left: auto;
+margin-right: auto;
+
+}
+
+.article1 h3 {
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.article2 h3 {
+  display: block;
+  color:black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+.article2 h5 {
+  display: block;
+  color:black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+.article2 h6 {
+  display: block;
+  color:black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.article1 p {
+  display: block;
+  font-size: 0.938em;
+  color: black;
+  line-height: 19px;
+  margin-top: 12px;
+
+}
+
+.article2 p {
+  font-size: 0.938em;
+  color:black;
+  font-style: italic;
+  line-height: 19px;
+  margin: 0 0 20px 0;
+
+}
+
+
+.article1 li {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.article2 dt {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.article2 li {
+  margin-top: 20px;
+}
+
+.article1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 75em;
+  *zoom: 1;
+
+}
+
+.article2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 75em;
+  *zoom: 1;
+
+}
+
+.most_market_tabs {
+  margin-top: 100px;
+  position: relative;
+  padding: 0 130px 40px;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.most_market_tabs_title{
+  position: relative;
+  display: inline-block;
+  top: -50px;
+  padding: 0 20px;
+  font-size: 2rem;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+background-color: black;
+color: #ffffff;
+text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.iframe_t{
+margin: auto;
+margin-top: 5%;
+
+}
