@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Store</title>
+    <link href="public/style.css" rel="stylesheet" media="all">
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+      <h1>{{title}}</h1>
+      <p>{{body}}</p>
+      <a href="store.html">Shop Now</a>
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <section class="container">
+        <object data="images/logo2.jpg" width="200" height="200"></object>
+        
+        <nav>
+          <ul class="navbar">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Register</a></li>
+            
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+ 
+    <article id="introduction">
+      <section id="information" class="container">
+        
+      </section>
+      <embed type="image/gif" src="1.gif" width="300" height="200">
+      
+      <div class=video>
+  
+        <h1 style="color:white;">Short Glimpse of the Store</h1>
+           <video width="600" height="300" controls autoplay>
+            <source src="m2.mp4" type="video/mp4">
+            <source src="m2.mp4" type="video/ogg" media="print and (resolution:300dpi)">
+        </video>
+        <h1>Listen to the Anthem Song</h1>
+        
+        <audio src="music.mp3" controls></audio>
+    
+  </div>
+    </article>
+
+    <footer>
+      <p>&copy; ARTOFMUSIC</p>
+    </footer>
+    <script src="public/main.js"></script>
+  </body>
+</html>

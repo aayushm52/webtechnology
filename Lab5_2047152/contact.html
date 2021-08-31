@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Music Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musicon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="public/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <section class="container">
+        <embed type="image/jpg" src="images/logo2.jpg" width="200" height="200">
+        
+        <nav>
+          <ul class="navbar">
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            
+            <li><a href="signup.html">Register</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+  
+       
+      				
+    
+
+    <article id="connection">
+      <section id="top">
+        <h2>Let's Get In Touch!</h2>
+        <p>Ready to start purchasing your musical instruments on Musicon? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+      </section>
+
+      <section class="contact">
+        <img class="icon" src="https://s3.amazonaws.com/codecademy-content/courses/learn-handlebars/musicon/phone+icon.svg" alt="phone icon">
+        <p>123-456-7890</p>
+      </section>
+      <section class="contact">
+        <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-handlebars/musicon/mail+icon.svg" alt="email icon">
+        <p>feedback@musicon.com</p>
+      </section>
+
+      
+    
+
+      <section class="maps">
+        <style>
+        .gfg {
+          font-size:60px;
+          font-weight:bold;
+          color:white;
+          margin:center;
+        }
+        .geeks {
+          margin:center;
+          color:black;
+
+        }
+        p {
+          font-size:20px;
+          margin:center;
+        }
+        .maps1{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 40%;
+        }
+        .location{
+          color:black;
+        }
+        script{
+          margin:center;
+        }
+        
+      </style>
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-handlebars/musicon/location+icon.svg" alt="location pin icon">
+      <div class = "gfg">Get In Touch</div>
+      
+  
+      
+  
+  
+      <button class= "geeks" type="button" onclick="getlocation();">
+        Open in Google Maps</button>
+      <div id="demo2" style="width: 500px; height: 500px;">
+        
+      </div>
+      <div class="maps1">
+      <script src="https://maps.google.com/maps/api/js?sensor=false">
+        
+      </script>
+      
+      <script type="text/javascript">
+      function getlocation(){
+        if(navigator.geolocation){
+          navigator.geolocation.getCurrentPosition(showLoc, errHand);
+        }
+      }
+      function showLoc(pos){
+        latt = pos.coords.latitude;
+        long = pos.coords.longitude;
+        var lattlong = new google.maps.LatLng(latt, long);
+        var OPTions = {
+          center: lattlong,
+          zoom: 10,
+          mapTypeControl: true,
+          navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
+        }
+        var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions);
+        var markerg =
+        new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"});
+      }
+      
+      function errHand(err) {
+        switch(err.code) {
+          case err.PERMISSION_DENIED:
+            result.innerHTML = "The application doesn't have the permission" +
+                "to make use of location services"
+            break;
+          case err.POSITION_UNAVAILABLE:
+            result.innerHTML = "The location of the device is uncertain"
+            break;
+          case err.TIMEOUT:
+            result.innerHTML = "The request to get user location timed out"
+            break;
+          case err.UNKNOWN_ERROR:
+            result.innerHTML = "Time to fetch location information exceeded"+
+            "the maximum timeout interval"
+            break;
+        }
+      }
+      </script>
+       <div class = "location">
+        <button class= "geeks" type="button" onclick="getLocation();">Try it</button>
+      
+    </div>
+      <p><strong></strong> Latitude and Longitude values</p>
+      
+      <p id="demo"></p>
+      
+      <script>
+      var x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+      </script>
+      </section>
+    </div>
+    </article>
+
+    <footer>
+      <p>&copy; ARTOFMUSIC</p>
+    </footer>
+  </body>
+</html>
