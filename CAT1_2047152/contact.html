@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7f257b9379.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container">
+            <div class="container">
+
+                <embed type="image/jpg" src="logo.jpg" width="200" height="100">
+                <ul class="nav-items">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./login.html">Login</a></li>
+                <li class="nav-item"><a href="./signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-form">
+        <div class="container-contact">
+            <div class="form-wrapper">
+                <div class="company-address">
+                    <i class="fas fa-map-marker-alt fa-3x" style="color: #ee4758;"></i>
+                    <h2>LOCATION</h2>
+                    <p>10th floor, M.G Road, Bangalore-461365</p>
+                    <i class="fas fa-envelope fa-3x" style="color: #ee4758;"></i>
+                    <h2>E-MAIL</h2>
+                    <p>travelnext@domain.com</p>
+                    <i class="fas fa-phone-square-alt fa-3x" style="color: #ee4758;"></i>
+                    <h2>CALL</h2>
+                    <p>+91-1150568508</p>
+
+                    <img src="./img/office.jpg" alt="Company Image">
+                    </div>
+                    <section class="maps">
+                        <style>
+                        .gfg {
+                          font-size:60px;
+                          font-weight:bold;
+                          color:white;
+                          margin:center;
+                        }
+                        .geeks {
+                          margin:center;
+                          color:black;
+                
+                        }
+                        p {
+                          font-size:20px;
+                          margin:center;
+                        }
+                        .maps1{
+                          display: block;
+                          margin-left: auto;
+                          margin-right: auto;
+                          width: 40%;
+                        }
+                        .location{
+                          color:black;
+                        }
+                        script{
+                          margin:center;
+                        }
+                        
+                      </style>
+                      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-handlebars/musicon/location+icon.svg" alt="location pin icon">
+                      <div class = "gfg">Get In Touch</div>
+                      
+                  
+                      
+                  
+                  
+                      <button class= "geeks" type="button" onclick="getlocation();">
+                        Open in Google Maps</button>
+                      <div id="demo2" style="width: 500px; height: 500px;">
+                        
+                      </div>
+                      <div class="maps1">
+                      <script src="https://maps.google.com/maps/api/js?sensor=false">
+                        
+                      </script>
+                      
+                      <script type="text/javascript">
+                      function getlocation(){
+                        if(navigator.geolocation){
+                          navigator.geolocation.getCurrentPosition(showLoc, errHand);
+                        }
+                      }
+                      function showLoc(pos){
+                        latt = pos.coords.latitude;
+                        long = pos.coords.longitude;
+                        var lattlong = new google.maps.LatLng(latt, long);
+                        var OPTions = {
+                          center: lattlong,
+                          zoom: 10,
+                          mapTypeControl: true,
+                          navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
+                        }
+                        var mapg = new google.maps.Map(document.getElementById("demo2"), OPTions);
+                        var markerg =
+                        new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"});
+                      }
+                      
+                      function errHand(err) {
+                        switch(err.code) {
+                          case err.PERMISSION_DENIED:
+                            result.innerHTML = "The application doesn't have the permission" +
+                                "to make use of location services"
+                            break;
+                          case err.POSITION_UNAVAILABLE:
+                            result.innerHTML = "The location of the device is uncertain"
+                            break;
+                          case err.TIMEOUT:
+                            result.innerHTML = "The request to get user location timed out"
+                            break;
+                          case err.UNKNOWN_ERROR:
+                            result.innerHTML = "Time to fetch location information exceeded"+
+                            "the maximum timeout interval"
+                            break;
+                        }
+                      }
+                      </script>
+                       <div class = "location">
+                        <button class= "geeks" type="button" onclick="getLocation();">Try it</button>
+                      
+                    </div>
+                      <p><strong></strong> Latitude and Longitude values</p>
+                      
+                      <p id="demo"></p>
+                      
+                      <script>
+                      var x = document.getElementById("demo");
+                      
+                      function getLocation() {
+                        if (navigator.geolocation) {
+                          navigator.geolocation.getCurrentPosition(showPosition);
+                        } else { 
+                          x.innerHTML = "Geolocation is not supported by this browser.";
+                        }
+                      }
+                      
+                      function showPosition(position) {
+                        x.innerHTML = "Latitude: " + position.coords.latitude + 
+                        "<br>Longitude: " + position.coords.longitude;
+                      }
+                      </script>
+                      </section>
+                    </div>
+                
+    </section>
+
+    <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-twitter fa-4x"></i>
+            <i class="fab fa-instagram fa-4x"></i>
+        </div>
+        <p>Travel Next &copy; 2021, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
