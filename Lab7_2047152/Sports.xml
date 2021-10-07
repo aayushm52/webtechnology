@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?DOCTYPE note
+[
+<!ELEMENT note (name,event,age,city)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT event (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+]?>
+<?xml-stylesheet type="text/xsl" href="Rules.xsl" ?>
+<participants>
+<title>Inventory Management System</title>
+   <product>
+      <title>Soflyy T-Shirt (blue)</title>
+      <id>999-B</id>
+      <price>15</price>
+      <color>blue</color>
+      <description>Made of 100% cotton</description>
+   </product>
+   <product>
+      <title>Soflyy T-Shirt (red)</title>
+      <id>999-C</id>
+      <price>15</price>
+      <color>red</color>
+      <description>Made of 100% cotton</description>
+   </product>
+   <product>
+      <title>Soflyy Mug</title>
+      <id>777-X</id>
+      <price>150</price>
+      <color>yellow</color>
+      <description>This mug is awesome.</description>
+   </product>
+   <product>
+      <title>Soflyy Mug</title>
+      <id>777-O</id>
+      
+      <price>9</price>
+      <color>orange</color>
+      <description />
+   </product>
+   <product>
+      <title>Soflyy Mug</title>
+      <id>777-Y</id>
+      <price>9</price>
+      <color>yellow</color>
+      <description />
+   </product>
+</participants>
