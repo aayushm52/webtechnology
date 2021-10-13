@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="college.xsl"?>
+<!DOCTYPE CHRIST SYSTEM "college.dtd">
+<CHRIST>
+<CS>
+    <STU-NAME>Ayush maheshwari</STU-NAME>
+    <STU-BRANCH>Computer Application</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>ayush@5mca.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+<CS>
+    <STU-NAME>Anjali Agrawalla</STU-NAME>
+    <STU-BRANCH>Computer Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>anjali@cs.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Apoorva naik</STU-NAME>
+    <STU-BRANCH>Data Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>apoorva@mds.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Mohak laddha</STU-NAME>
+    <STU-BRANCH>Computer Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>mohak@cs.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Keyur Gandhi</STU-NAME>
+    <STU-BRANCH>Computer Application</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>keyur@mca.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+
+
+</CHRIST>
